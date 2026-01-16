@@ -1,0 +1,74 @@
+# ===========================
+# Dependencies
+# ===========================
+node_modules/
+**/node_modules/
+
+# ===========================
+# Build outputs
+# ===========================
+**/dist/
+**/build/
+
+# ===========================
+# Environment variables
+# ===========================
+**/.env
+**/.env.local
+**/.env.*.local
+!**/.env.example
+
+# ===========================
+# Firebase credentials (CRITICAL!)
+# ===========================
+**/*-firebase-adminsdk-*.json
+**/firebase-service-account.json
+**/serviceAccountKey.json
+
+# ===========================
+# IDE & Editors
+# ===========================
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.sublime-*
+*.swp
+*.swo
+
+# ===========================
+# OS Files
+# ===========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===========================
+# Logs
+# ===========================
+**/*.log
+**/logs/
+
+# ===========================
+# Cache
+# ===========================
+**/.cache/
+**/.vite/
+**/.eslintcache
+
+# ===========================
+# Testing
+# ===========================
+**/coverage/
+
+# ===========================
+# TypeScript
+# ===========================
+**/*.tsbuildinfo
+
+# ===========================
+# Deployment
+# ===========================
+.vercel/
+.render/
+.firebase/

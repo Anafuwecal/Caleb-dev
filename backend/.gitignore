@@ -1,0 +1,179 @@
+# ===========================
+# Dependencies
+# ===========================
+node_modules/
+.pnp/
+.pnp.js
+
+# ===========================
+# Build outputs
+# ===========================
+dist/
+build/
+out/
+
+# ===========================
+# Environment variables
+# ===========================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Keep example env file
+!.env.example
+
+# ===========================
+# Firebase
+# ===========================
+# Firebase service account key (NEVER commit this!)
+*-firebase-adminsdk-*.json
+firebase-service-account.json
+serviceAccountKey.json
+firebase-credentials.json
+*.firebase.json
+
+# Firebase emulator data
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+pubsub-debug.log
+.firebaserc
+
+# ===========================
+# Editor & IDE
+# ===========================
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.history/
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ===========================
+# OS generated files
+# ===========================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===========================
+# Logs
+# ===========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+combined.log
+error.log
+
+# ===========================
+# Testing
+# ===========================
+coverage/
+.nyc_output/
+*.lcov
+
+# ===========================
+# TypeScript
+# ===========================
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ===========================
+# Cache
+# ===========================
+.cache/
+.npm/
+.eslintcache
+*.cache
+
+# ===========================
+# Security - IMPORTANT!
+# ===========================
+# Private keys
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+
+# Secrets
+secrets/
+.secrets/
+credentials/
+
+# ===========================
+# Database
+# ===========================
+*.sqlite
+*.sqlite3
+*.db
+data/
+
+# ===========================
+# Uploads (if storing locally)
+# ===========================
+uploads/
+temp-uploads/
+
+# ===========================
+# Misc
+# ===========================
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===========================
+# Render / Deployment
+# ===========================
+.render/
