@@ -5,6 +5,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import SectionHeading from '../common/SectionHeading';
 import { TESTIMONIALS } from '../../utils/constants';
+import { PLACEHOLDERS } from '../../utils/placeholders';
 
 const TestimonialsSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -40,7 +41,7 @@ const TestimonialsSection: React.FC = () => {
                     className="h-full w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = 'https://via.placeholder.com/120x48?text=Logo';
+                      target.src = PLACEHOLDERS.logo;
                     }}
                   />
                 </div>
@@ -55,14 +56,14 @@ const TestimonialsSection: React.FC = () => {
 
                 {/* Author */}
                 <div className="flex items-center gap-4 pt-4 border-t border-grayLight">
-                  <div className="w-12 h-12 rounded-full overflow-hidden">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-grayLight">
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = 'https://via.placeholder.com/48x48?text=User';
+                        target.src = PLACEHOLDERS.avatar;
                       }}
                     />
                   </div>

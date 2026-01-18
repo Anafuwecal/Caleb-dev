@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { PLACEHOLDERS } from '../utils/placeholders';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import SectionHeading from '../components/common/SectionHeading';
 import SkillBar from '../components/common/SkillBar';
@@ -80,7 +81,7 @@ const AboutPage: React.FC = () => {
                   className="w-full h-auto"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = 'https://via.placeholder.com/500x600?text=Caleb';
+                    target.src = PLACEHOLDERS.about;
                   }}
                 />
               </div>

@@ -5,6 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import SectionHeading from '../common/SectionHeading';
 import { PROJECTS } from '../../utils/constants';
+import { PLACEHOLDERS } from '../../utils/placeholders';
 
 const PortfolioSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -18,18 +19,18 @@ const PortfolioSection: React.FC = () => {
     project,
     reverse = false,
   }) => (
-    <div
-      className={`flex-shrink-0 w-80 md:w-96 mx-4 ${
-        reverse ? 'mt-12' : ''
-      }`}
-    >
+    <div className={`flex-shrink-0 w-80 md:w-96 mx-4 ${reverse ? 'mt-12' : ''}`}>
       <div className="card overflow-hidden group">
         {/* Project Image */}
-        <div className="relative h-48 overflow-hidden rounded-lg mb-4">
+        <div className="relative h-48 overflow-hidden rounded-lg mb-4 bg-grayLight">
           <img
             src={project.image}
             alt={project.title}
             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = PLACEHOLDERS.project;
+            }}
           />
           <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
             <a
@@ -103,8 +104,7 @@ const PortfolioSection: React.FC = () => {
       <div className="section-container mb-12">
         <SectionHeading
           title="Featured Projects"
-          subtitle="A showcase of my recent work in AI, web development, and design.
-                   Each project represents a unique challenge and creative solution."
+          subtitle="A showcase of my recent work in AI, web development, and design."
         />
       </div>
 

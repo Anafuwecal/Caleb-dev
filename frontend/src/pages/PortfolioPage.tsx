@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { PLACEHOLDERS } from '../utils/placeholders';
 import Button from '../components/common/Button';
 import { PROJECTS, CONTACT_INFO } from '../utils/constants';
 
@@ -101,7 +102,7 @@ const PortfolioPage: React.FC = () => {
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = 'https://via.placeholder.com/400x250?text=Project';
+                        target.src = PLACEHOLDERS.project;
                       }}
                     />
                     <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">

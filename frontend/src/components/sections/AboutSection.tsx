@@ -4,6 +4,7 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import SkillBar from '../common/SkillBar';
 import Button from '../common/Button';
 import { SKILLS } from '../../utils/constants';
+import { PLACEHOLDERS } from '../../utils/placeholders';
 
 const AboutSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -40,7 +41,7 @@ const AboutSection: React.FC = () => {
                   className="w-full h-auto"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = 'https://via.placeholder.com/500x600?text=About+Me';
+                    target.src = PLACEHOLDERS.about;
                   }}
                 />
               </div>

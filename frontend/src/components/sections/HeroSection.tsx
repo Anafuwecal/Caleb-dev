@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Button from '../common/Button';
-import hero from '../../assets/images/hero/hero-image.jpg';
 import SocialLinks from '../common/SocialLinks';
 import { CONTACT_INFO } from '../../utils/constants';
+import { PLACEHOLDERS } from '../../utils/placeholders';
 
 const HeroSection: React.FC = () => {
   return (
@@ -21,9 +21,9 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-grayDark font-bold mb-4"
+              className="text-grayDark font-medium mb-4"
             >
-               Hello, I'm
+              👋 Hello, I'm
             </motion.p>
             
             <motion.h1
@@ -42,10 +42,10 @@ const HeroSection: React.FC = () => {
               className="flex flex-wrap gap-2 mb-6"
             >
               <span className="px-4 py-2 bg-primary text-secondary rounded-full text-sm font-medium">
-                Full-Stack Developer
+                AI Engineer
               </span>
               <span className="px-4 py-2 bg-grayDark text-secondary rounded-full text-sm font-medium">
-                AI Engineer
+                Full-Stack Developer
               </span>
               <span className="px-4 py-2 border-2 border-primary text-primary rounded-full text-sm font-medium">
                 Graphic Designer
@@ -105,15 +105,34 @@ const HeroSection: React.FC = () => {
               <div className="absolute -bottom-4 -right-4 w-48 h-48 md:w-64 md:h-64 bg-grayDark/10 rounded-full blur-2xl" />
               
               {/* Main Image */}
-              <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden  border-[7px] border-primary shadow-2xl">
+              <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary shadow-2xl bg-grayLight">
                 <img
-                  src={hero}
+                  src="/assets/images/caleb-hero.jpg"
                   alt="Caleb Anafuwe"
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = PLACEHOLDERS.hero;
+                  }}
                 />
               </div>
               
+              {/* Floating Elements */}
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="absolute -top-6 right-0 bg-primary text-secondary px-4 py-2 rounded-lg shadow-lg"
+              >
+                <span className="text-sm font-medium">5+ Years Experience</span>
+              </motion.div>
               
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 3, repeat: Infinity, delay: 1 }}
+                className="absolute -bottom-6 left-0 bg-secondary text-primary px-4 py-2 rounded-lg shadow-lg border border-primary"
+              >
+                <span className="text-sm font-medium">50+ Projects Completed</span>
+              </motion.div>
             </div>
           </motion.div>
         </div>

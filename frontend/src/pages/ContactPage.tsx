@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { toast } from 'react-hot-toast';
+import { PLACEHOLDERS } from '../utils/placeholders'
 import {
   FaMapMarkerAlt,
   FaPhone,
@@ -121,13 +122,14 @@ const ContactPage: React.FC = () => {
               {/* Image */}
               <div className="relative mb-8">
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  // In the image section, update the onError handler:
                   <img
                     src="/assets/images/caleb-contact.jpg"
                     alt="Contact Caleb"
                     className="w-full h-auto"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = 'https://via.placeholder.com/500x400?text=Contact';
+                      target.src = PLACEHOLDERS.contact;
                     }}
                   />
                 </div>
