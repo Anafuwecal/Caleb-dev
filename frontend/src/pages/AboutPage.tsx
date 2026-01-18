@@ -75,7 +75,7 @@ const AboutPage: React.FC = () => {
             >
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/images/caleb-about-full.jpg"
+                  src="/assets/images/hero/herot.jpg"
                   alt="Caleb Anafuwe"
                   className="w-full h-auto"
                   onError={(e) => {
