@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { db } from '../config/firebase';
 import transporter from '../config/email';
-import { NewsletterSubscriber, ApiResponse } from '../types';
+import type { ApiResponse } from '../types';
 
 export const subscribeToNewsletter = async (
   req: Request,
@@ -12,20 +12,22 @@ export const subscribeToNewsletter = async (
 
     // Validation
     if (!email) {
-      res.status(400).json({
+      const response: ApiResponse = {
         success: false,
         message: 'Email is required',
-      } as ApiResponse);
+      };
+      res.status(400).json(response);
       return;
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      res.status(400).json({
+      const response: ApiResponse = {
         success: false,
         message: 'Invalid email address',
-      } as ApiResponse);
+      };
+      res.status(400).json(response);
       return;
     }
 
@@ -36,10 +38,11 @@ export const subscribeToNewsletter = async (
       .get();
 
     if (!existingSubscriber.empty) {
-      res.status(400).json({
+      const response: ApiResponse = {
         success: false,
         message: 'This email is already subscribed',
-      } as ApiResponse);
+      };
+      res.status(400).json(response);
       return;
     }
 
@@ -94,16 +97,20 @@ export const subscribeToNewsletter = async (
 
     await transporter.sendMail(welcomeEmailOptions);
 
-    res.status(201).json({
+
+    const response: ApiResponse<{ id: string }> = {
       success: true,
       message: 'Successfully subscribed to newsletter',
       data: { id: newSubscriber.id },
-    } as ApiResponse);
+    };
+    res.status(201).json(response);
+
   } catch (error) {
     console.error('Newsletter subscription error:', error);
-    res.status(500).json({
+    const response: ApiResponse = {
       success: false,
       message: 'Failed to subscribe. Please try again.',
-    } as ApiResponse);
+    };
+    res.status(500).json(response);
   }
 };

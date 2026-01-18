@@ -17,5 +17,14 @@ export interface NewsletterSubscriber {
 export interface ApiResponse<T = null> {
   success: boolean;
   message: string;
-  data?: T;
+  data?: T | null;  // Can be T, null, or undefined
+}
+
+// Alternative: Create specific response types
+export interface ContactResponse {
+  id: string;
+}
+
+export interface NewsletterResponse {
+  id: string;
 }

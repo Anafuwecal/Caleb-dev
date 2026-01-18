@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { db } from '../config/firebase';
 import transporter from '../config/email';
-import { ContactMessage, ApiResponse } from '../types';
+import type { ContactMessage, ApiResponse } from '../types';
 
 export const sendContactMessage = async (
   req: Request,
@@ -12,20 +12,22 @@ export const sendContactMessage = async (
 
     // Validation
     if (!name || !email || !country || !message) {
-      res.status(400).json({
+      const response: ApiResponse = {
         success: false,
         message: 'All fields are required',
-      } as ApiResponse);
+      };
+      res.status(400).json(response);
       return;
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      res.status(400).json({
+      const response: ApiResponse = {
         success: false,
         message: 'Invalid email address',
-      } as ApiResponse);
+      };
+      res.status(400).json(response);
       return;
     }
 
@@ -103,16 +105,20 @@ export const sendContactMessage = async (
 
     await transporter.sendMail(autoReplyOptions);
 
-    res.status(201).json({
+
+    const response: ApiResponse<{ id: string }> = {
       success: true,
       message: 'Message sent successfully',
       data: { id: newContact.id },
-    } as ApiResponse);
+    };
+    res.status(201).json(response);
+
   } catch (error) {
     console.error('Contact form error:', error);
-    res.status(500).json({
+    const response: ApiResponse = {
       success: false,
       message: 'Failed to send message. Please try again.',
-    } as ApiResponse);
+    };
+    res.status(500).json(response);
   }
 };
