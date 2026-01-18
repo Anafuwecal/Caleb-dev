@@ -1,4 +1,3 @@
-import type { useState } from 'react';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
@@ -9,7 +8,6 @@ import {
   FaEnvelope,
   FaPaperPlane,
 } from 'react-icons/fa';
-import SectionHeading from '../components/common/SectionHeading';
 import Button from '../components/common/Button';
 import SocialLinks from '../components/common/SocialLinks';
 import { useForm } from '../hooks/useForm';
@@ -48,10 +46,9 @@ const ContactPage: React.FC = () => {
   const handleSubmit = async (values: ContactFormData) => {
     try {
       await sendContactMessage(values);
-      toast.success('Message sent successfully! I\'ll get back to you soon.');
-    } catch (error) {
+      toast.success("Message sent successfully! I'll get back to you soon.");
+    } catch {
       toast.error('Failed to send message. Please try again.');
-      throw error;
     }
   };
 
@@ -72,7 +69,7 @@ const ContactPage: React.FC = () => {
         <title>Contact | Caleb Anafuwe - Get in Touch</title>
         <meta
           name="description"
-          content="Get in touch with Caleb Anafuwe for AI engineering, web development, or graphic design projects. Let's discuss your ideas and bring them to life."
+          content="Get in touch with Caleb Anafuwe for AI engineering, web development, or graphic design projects."
         />
         <link rel="canonical" href="https://calebanafuwe.com/contact" />
       </Helmet>
@@ -90,7 +87,6 @@ const ContactPage: React.FC = () => {
             </h1>
             <p className="text-grayMedium text-lg md:text-xl max-w-3xl mx-auto">
               Have a question or want to work together? I'd love to hear from you.
-              Fill out the form below or reach out directly.
             </p>
           </motion.div>
         </div>
@@ -129,6 +125,10 @@ const ContactPage: React.FC = () => {
                     src="/assets/images/caleb-contact.jpg"
                     alt="Contact Caleb"
                     className="w-full h-auto"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = 'https://via.placeholder.com/500x400?text=Contact';
+                    }}
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary/10 rounded-2xl -z-10" />

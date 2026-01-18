@@ -50,23 +50,24 @@ export interface Testimonial {
   avatar: string;
 }
 
-// Contact Form Types
+// Contact Form Types - Fixed with index signature
 export interface ContactFormData {
   name: string;
   email: string;
   country: string;
   message: string;
+  [key: string]: string; // Add index signature
 }
 
 // Newsletter Types
 export interface NewsletterData {
   email: string;
+  [key: string]: string;
 }
 
 // API Response Types
-export interface ApiResponse<T> {
+export interface ApiResponse<T = null> {
   success: boolean;
   message: string;
-  data?: T;
+  data?: T | null;
 }
-

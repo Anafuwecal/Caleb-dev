@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import SectionHeading from '../components/common/SectionHeading';
 import Button from '../components/common/Button';
 import { PROJECTS, CONTACT_INFO } from '../utils/constants';
 
@@ -29,7 +28,7 @@ const PortfolioPage: React.FC = () => {
         <title>Portfolio | Caleb Anafuwe - Projects & Work</title>
         <meta
           name="description"
-          content="Explore Caleb Anafuwe's portfolio of AI, web development, and design projects. See live demos, source code, and detailed case studies."
+          content="Explore Caleb Anafuwe's portfolio of AI, web development, and design projects."
         />
         <link rel="canonical" href="https://calebanafuwe.com/portfolio" />
       </Helmet>
@@ -47,8 +46,7 @@ const PortfolioPage: React.FC = () => {
             </h1>
             <p className="text-grayMedium text-lg md:text-xl max-w-3xl mx-auto">
               A collection of my best work in AI engineering, web development,
-              and graphic design. Each project represents a unique challenge
-              and creative solution.
+              and graphic design.
             </p>
           </motion.div>
         </div>
@@ -101,6 +99,10 @@ const PortfolioPage: React.FC = () => {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://via.placeholder.com/400x250?text=Project';
+                      }}
                     />
                     <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                       <a
@@ -108,7 +110,6 @@ const PortfolioPage: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center text-primary hover:scale-110 transition-transform"
-                        aria-label="View GitHub Repository"
                       >
                         <FaGithub size={24} />
                       </a>
@@ -117,7 +118,6 @@ const PortfolioPage: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center text-primary hover:scale-110 transition-transform"
-                        aria-label="View Live Demo"
                       >
                         <FaExternalLinkAlt size={20} />
                       </a>
@@ -198,12 +198,9 @@ const PortfolioPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="heading-primary mb-4">
-              Have a Project in Mind?
-            </h2>
+            <h2 className="heading-primary mb-4">Have a Project in Mind?</h2>
             <p className="text-grayDark text-lg mb-8 max-w-2xl mx-auto">
               I'm always excited to work on new and challenging projects.
-              Let's collaborate and create something extraordinary together.
             </p>
             <Button
               href={CONTACT_INFO.serviceFormUrl}

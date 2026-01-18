@@ -11,13 +11,13 @@ interface UseFormReturn<T> {
   values: T;
   errors: Partial<Record<keyof T, string>>;
   isSubmitting: boolean;
-  handleChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  handleChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
   handleSubmit: (e: FormEvent<HTMLFormElement>) => Promise<void>;
   resetForm: () => void;
   setFieldValue: (field: keyof T, value: string) => void;
 }
 
-export function useForm<T extends Record<string, string>>({
+export function useForm<T extends object>({
   initialValues,
   onSubmit,
   validate,
@@ -27,7 +27,7 @@ export function useForm<T extends Record<string, string>>({
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
     setValues((prev) => ({ ...prev, [name]: value }));

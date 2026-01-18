@@ -38,6 +38,10 @@ const AboutSection: React.FC = () => {
                   src="/assets/images/caleb-about.jpg"
                   alt="Caleb Anafuwe - About"
                   className="w-full h-auto"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://via.placeholder.com/500x600?text=About+Me';
+                  }}
                 />
               </div>
               

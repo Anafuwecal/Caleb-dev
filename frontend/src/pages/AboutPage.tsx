@@ -5,61 +5,46 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import SectionHeading from '../components/common/SectionHeading';
 import SkillBar from '../components/common/SkillBar';
 import Button from '../components/common/Button';
-import hero from '../assets/images/hero/herot.jpg';
 import { SKILLS, CONTACT_INFO } from '../utils/constants';
 
 const AboutPage: React.FC = () => {
-  const skillsRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLElement>(null);
   const isSkillsVisible = useScrollAnimation(skillsRef);
 
   const experiences = [
-
     {
-      year: 'OCTOBER 2024 - Present',
+      year: '2019 - Present',
+      title: 'Senior AI Engineer',
+      company: 'Tech Innovations Ltd.',
+      description: 'Leading AI/ML projects and developing intelligent solutions for enterprise clients.',
+    },
+    {
+      year: '2017 - 2019',
       title: 'Full-Stack Developer',
-      company: 'VYRE.AFRICA',
-      description: 'Collaborated, Deployed and Integrated with to ensure code quality through Git version control and code reviews and maintained applications on cloud',
+      company: 'Digital Solutions Inc.',
+      description: 'Built scalable web applications using React, Node.js, and cloud technologies.',
     },
     {
-      year: 'JUNE 2024 – SEPT 2024',
-      title: ' FRONT-END DEVELOPER INTERN',
-      company: 'MICROGRAPHIA',
-      description: 'Established best practices for coding standards within team environment, Built responsive web pages for different devices and developed web applications using HTML, CSS and JavaScript.',
-    },
-    {
-      year: '2024 SEPT - 2025 MAY',
+      year: '2015 - 2017',
       title: 'Graphic Designer',
-      company: 'MegaFrost fast-food',
-      description: 'Created brand identities, marketing materials, and UI designs.',
+      company: 'Creative Agency',
+      description: 'Created brand identities, marketing materials, and UI designs for various clients.',
     },
   ];
 
   const education = [
     {
-      year: '2025',
-      degree: 'B.Sc. Management Information Technology',
-      institution: 'ESAE University, Benin Republic',
-      description: 'Graduated with Second Class Honours, focusing on AI and Software Engineering.',
+      year: '2015',
+      degree: 'B.Sc. Computer Science',
+      institution: 'University of Nigeria',
+      description: 'Graduated with First Class Honours, focusing on AI and Software Engineering.',
     },
     {
-      year: '2025',
-      degree: 'Full-stack Developer',
-      institution: 'Regonet Global / Asdin.net',
-      description: 'Completed advanced courses in UI/UX, Frontend and backend Development.',
+      year: '2020',
+      degree: 'Deep Learning Specialization',
+      institution: 'Coursera - DeepLearning.AI',
+      description: 'Completed advanced courses in neural networks and deep learning.',
     },
-    {
-      year: '2025',
-      degree: ' Scientific Computing with Python',
-      institution: 'Freecodecamp',
-      description: 'Completed belginner course with computation in python language.',
-    },
-    {
-      year: '2024',
-      degree: ' Responsive Web designer',
-      institution: 'Freecodecamp',
-      description: 'Completed beginner course in web designing using html, css and javascript.',
-    },
-    
   ];
 
   const aiSkills = SKILLS.filter((skill) => skill.category === 'ai');
@@ -72,7 +57,7 @@ const AboutPage: React.FC = () => {
         <title>About Caleb Anafuwe | AI Engineer & Full-Stack Developer</title>
         <meta
           name="description"
-          content="Learn about Caleb Anafuwe's journey as an AI Engineer, Full-Stack Developer, and Graphic Designer. Discover skills, experience, and passion for technology."
+          content="Learn about Caleb Anafuwe's journey as an AI Engineer, Full-Stack Developer, and Graphic Designer."
         />
         <link rel="canonical" href="https://calebanafuwe.com/about" />
       </Helmet>
@@ -90,9 +75,13 @@ const AboutPage: React.FC = () => {
             >
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src={hero}
+                  src="/assets/images/caleb-about-full.jpg"
                   alt="Caleb Anafuwe"
                   className="w-full h-auto"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://via.placeholder.com/500x600?text=Caleb';
+                  }}
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary rounded-2xl -z-0" />
@@ -115,12 +104,12 @@ const AboutPage: React.FC = () => {
               <p className="text-grayDark mb-6">
                 My journey began with a fascination for how technology can solve
                 real-world problems. This curiosity led me to explore artificial
-                intelligence, web development, and graphic design – three fields
-                that I now seamlessly integrate to create holistic digital solutions.
+                intelligence, web development, and graphic design.
               </p>
               <p className="text-grayDark mb-8">
                 When I'm not coding or designing, you'll find me exploring new
-                technologies, contributing to open-source projects.
+                technologies, contributing to open-source projects, or mentoring
+                aspiring developers.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -235,12 +224,9 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 className="relative pl-8 pb-8 border-l-2 border-primary last:pb-0"
               >
-                {/* Timeline Dot */}
                 <div className="absolute -left-3 top-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-secondary rounded-full" />
                 </div>
-
-                {/* Content */}
                 <div className="card">
                   <span className="inline-block px-3 py-1 bg-primary text-secondary text-sm rounded-full mb-3">
                     {exp.year}
