@@ -5,7 +5,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import SectionHeading from '../components/common/SectionHeading';
 import SkillBar from '../components/common/SkillBar';
 import Button from '../components/common/Button';
-import herot from '../assets/images/hero/herot.jpg'
+import hero from '../assets/images/hero/herot.jpg';
 import { SKILLS, CONTACT_INFO } from '../utils/constants';
 
 const AboutPage: React.FC = () => {
@@ -90,7 +90,7 @@ const AboutPage: React.FC = () => {
             >
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src={herot}
+                  src={hero}
                   alt="Caleb Anafuwe"
                   className="w-full h-auto"
                 />

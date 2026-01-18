@@ -199,7 +199,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 3,
-    name: 'Emily Rodriguez',
+    name: 'Divine',
     position: 'Marketing Director',
     company: 'BrandWave',
     quote: 'The brand identity Caleb created for us perfectly captured our vision. Creative, professional, and delivered on time!',
