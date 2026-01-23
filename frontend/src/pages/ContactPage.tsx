@@ -122,9 +122,8 @@ const ContactPage: React.FC = () => {
               {/* Image */}
               <div className="relative mb-8">
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
-                  // In the image section, update the onError handler:
                   <img
-                    src="/assets/images/caleb-contact.jpg"
+                    src="/assets/images/contact-page/contact.jpg"
                     alt="Contact Caleb"
                     className="w-full h-auto"
                     onError={(e) => {

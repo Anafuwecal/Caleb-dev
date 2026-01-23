@@ -166,9 +166,6 @@ const ServicesPage: React.FC = () => {
                   <div className="w-20 h-20 bg-primary text-secondary rounded-full flex items-center justify-center text-2xl font-bold">
                     {step.step}
                   </div>
-                  {index < processSteps.length - 1 && (
-                    <div className="hidden lg:block absolute top-1/2 left-full w-full h-0.5 bg-primary/30 -translate-y-1/2" />
-                  )}
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">{step.title}</h3>
                 <p className="text-grayDark">{step.description}</p>
@@ -218,15 +215,15 @@ const ServicesPage: React.FC = () => {
               className="grid grid-cols-2 gap-6"
             >
               <div className="bg-grayDark/50 rounded-xl p-6 text-center">
-                <p className="text-4xl font-bold mb-2">50+</p>
+                <p className="text-4xl font-bold mb-2">11+</p>
                 <p className="text-grayMedium">Projects Completed</p>
               </div>
               <div className="bg-grayDark/50 rounded-xl p-6 text-center">
-                <p className="text-4xl font-bold mb-2">30+</p>
+                <p className="text-4xl font-bold mb-2">17+</p>
                 <p className="text-grayMedium">Happy Clients</p>
               </div>
               <div className="bg-grayDark/50 rounded-xl p-6 text-center">
-                <p className="text-4xl font-bold mb-2">5+</p>
+                <p className="text-4xl font-bold mb-2">3+</p>
                 <p className="text-grayMedium">Years Experience</p>
               </div>
               <div className="bg-grayDark/50 rounded-xl p-6 text-center">

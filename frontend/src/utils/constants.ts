@@ -37,7 +37,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const SKILLS: Skill[] = [
   { name: 'OpenAI API / LLMs', percentage: 80, category: 'ai' },
   { name: 'Typescript', percentage: 82, category: 'ai' },
-  { name: 'Python', percentage: 52, category: 'ai' },
+  { name: 'Langchain', percentage: 52, category: 'ai' },
+  { name: 'Langgraph', percentage: 52, category: 'ai' },
+  { name: 'Python', percentage: 42, category: 'ai' },
   { name: 'Natural Language Processing (NLP)', percentage: 50, category: 'ai' },
   { name: 'Canva', percentage: 80, category: 'graphics' },
   { name: 'Adobe Photoshop', percentage: 62, category: 'graphics' },

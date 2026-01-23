@@ -14,37 +14,37 @@ const AboutPage: React.FC = () => {
 
   const experiences = [
     {
-      year: '2019 - Present',
-      title: 'Senior AI Engineer',
-      company: 'Tech Innovations Ltd.',
-      description: 'Leading AI/ML projects and developing intelligent solutions for enterprise clients.',
+      year: 'OCTOBER 2024 - CURRENT',
+      title: 'FULL-STACK DEVELOPER',
+      company: 'VYRE.AFRICA',
+      description: 'Deployed, maintained and Collaborated with cross-functional teams to ensure code quality through Git version control and code reviews.',
     },
     {
-      year: '2017 - 2019',
-      title: 'Full-Stack Developer',
-      company: 'Digital Solutions Inc.',
-      description: 'Built scalable web applications using React, Node.js, and cloud technologies.',
+      year: 'JUNE 2024 – SEPT 2024',
+      title: 'FRONT-END DEVELOPER',
+      company: 'MICROGRAPHIA',
+      description: 'Established responsive web pages optimized for different devices and built best practices for coding standards within team environment.',
     },
     {
-      year: '2015 - 2017',
+      year: 'JANUARY 2025 - MAY 2025',
       title: 'Graphic Designer',
-      company: 'Creative Agency',
+      company: 'MEGAFROST FOOD',
       description: 'Created brand identities, marketing materials, and UI designs for various clients.',
     },
   ];
 
   const education = [
     {
-      year: '2015',
-      degree: 'B.Sc. Computer Science',
-      institution: 'University of Nigeria',
-      description: 'Graduated with First Class Honours, focusing on AI and Software Engineering.',
+      year: '2025',
+      degree: 'B.Sc. Management Information Technology',
+      institution: 'ESAE University',
+      description: 'Graduated with Second Class Honours, focusing on AI and Software Technologies.',
     },
     {
-      year: '2020',
-      degree: 'Deep Learning Specialization',
-      institution: 'Coursera - DeepLearning.AI',
-      description: 'Completed advanced courses in neural networks and deep learning.',
+      year: '2025',
+      degree: 'Fullstack Development',
+      institution: 'Regonet.Global',
+      description: 'Completed advanced courses in Frontend and Backend Development.',
     },
   ];
 
@@ -95,9 +95,9 @@ const AboutPage: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <h1 className="heading-primary mb-6">About Me</h1>
-              <p className="text-grayDark text-lg mb-6">
+              <p className="font-bold text-grayDark text-lg mb-6">
                 Hi! I'm Caleb Anafuwe, a passionate technologist and creative
-                professional based in Nigeria. With over 5 years of experience
+                professional based in Nigeria. With over 3+ years of experience
                 in the tech industry, I've had the privilege of working on
                 diverse projects ranging from AI-powered applications to
                 stunning brand identities.
@@ -147,9 +147,6 @@ const AboutPage: React.FC = () => {
             {/* AI Engineering */}
             <div className="card">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-primary text-secondary rounded-xl flex items-center justify-center text-2xl">
-                  🤖
-                </div>
                 <h3 className="text-xl font-bold text-primary">AI Engineering</h3>
               </div>
               <div className="space-y-4">
@@ -167,9 +164,6 @@ const AboutPage: React.FC = () => {
             {/* Graphics Design */}
             <div className="card">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-primary text-secondary rounded-xl flex items-center justify-center text-2xl">
-                  🎨
-                </div>
                 <h3 className="text-xl font-bold text-primary">Graphics Design</h3>
               </div>
               <div className="space-y-4">
@@ -187,9 +181,6 @@ const AboutPage: React.FC = () => {
             {/* Full-Stack Development */}
             <div className="card">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-primary text-secondary rounded-xl flex items-center justify-center text-2xl">
-                  💻
-                </div>
                 <h3 className="text-xl font-bold text-primary">Full-Stack Dev</h3>
               </div>
               <div className="space-y-4">

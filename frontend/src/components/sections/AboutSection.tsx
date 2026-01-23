@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute -bottom-6 -right-6 bg-primary text-secondary p-6 rounded-xl shadow-xl z-20"
               >
-                <p className="text-3xl font-bold">2+</p>
+                <p className="text-3xl font-bold">3+</p>
                 <p className="text-sm">Years of Experience</p>
               </motion.div>
             </div>
@@ -68,7 +68,7 @@ const AboutSection: React.FC = () => {
             
             <p className="font-bold text-grayDark text-lg mb-6">
               I'm Caleb Anafuwe, a passionate AI Engineer, Full-Stack Developer,
-              and Graphic Designer based in Nigeria. With over 2 years of experience,
+              and Graphic Designer based in Nigeria. With over 3+ years of experience,
               I specialize in creating intelligent solutions and beautiful digital
               experiences that make a difference.
             </p>
