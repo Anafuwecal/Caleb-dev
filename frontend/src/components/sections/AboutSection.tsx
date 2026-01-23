@@ -36,7 +36,7 @@ const AboutSection: React.FC = () => {
               {/* Main Image */}
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/images/caleb-about.jpg"
+                  src="/assets/images/hero/herot.jpg"
                   alt="Caleb Anafuwe - About"
                   className="w-full h-auto"
                   onError={(e) => {
@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute -bottom-6 -right-6 bg-primary text-secondary p-6 rounded-xl shadow-xl z-20"
               >
-                <p className="text-3xl font-bold">5+</p>
+                <p className="text-3xl font-bold">2+</p>
                 <p className="text-sm">Years of Experience</p>
               </motion.div>
             </div>
@@ -66,9 +66,9 @@ const AboutSection: React.FC = () => {
           >
             <h2 className="heading-primary mb-6">About Me</h2>
             
-            <p className="text-grayDark text-lg mb-6">
+            <p className="font-bold text-grayDark text-lg mb-6">
               I'm Caleb Anafuwe, a passionate AI Engineer, Full-Stack Developer,
-              and Graphic Designer based in Nigeria. With over 5 years of experience,
+              and Graphic Designer based in Nigeria. With over 2 years of experience,
               I specialize in creating intelligent solutions and beautiful digital
               experiences that make a difference.
             </p>
@@ -85,9 +85,6 @@ const AboutSection: React.FC = () => {
               {/* AI Engineering Skills */}
               <div>
                 <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-primary text-secondary rounded-lg flex items-center justify-center text-sm">
-                    🤖
-                  </span>
                   AI Engineering
                 </h3>
                 <div className="space-y-3">
@@ -105,9 +102,6 @@ const AboutSection: React.FC = () => {
               {/* Graphics Design Skills */}
               <div>
                 <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-primary text-secondary rounded-lg flex items-center justify-center text-sm">
-                    🎨
-                  </span>
                   Graphics Design
                 </h3>
                 <div className="space-y-3">
@@ -125,9 +119,6 @@ const AboutSection: React.FC = () => {
               {/* Full-Stack Development Skills */}
               <div>
                 <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-primary text-secondary rounded-lg flex items-center justify-center text-sm">
-                    💻
-                  </span>
                   Full-Stack Development
                 </h3>
                 <div className="space-y-3">

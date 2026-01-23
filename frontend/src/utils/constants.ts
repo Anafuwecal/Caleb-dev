@@ -35,14 +35,28 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 // Skills Data
 export const SKILLS: Skill[] = [
-  { name: 'AI Engineering', percentage: 80, category: 'ai' },
-  { name: 'Graphic Design', percentage: 70, category: 'graphics' },
+  { name: 'OpenAI API / LLMs', percentage: 80, category: 'ai' },
+  { name: 'Typescript', percentage: 82, category: 'ai' },
+  { name: 'Python', percentage: 52, category: 'ai' },
+  { name: 'Natural Language Processing (NLP)', percentage: 50, category: 'ai' },
+  { name: 'Canva', percentage: 80, category: 'graphics' },
+  { name: 'Adobe Photoshop', percentage: 62, category: 'graphics' },
+  { name: 'CorelDRAW', percentage: 50, category: 'graphics' },
   { name: 'React.js', percentage: 75, category: 'fullstack' },
   { name: 'Vue.js', percentage: 95, category: 'fullstack' },
+  { name: 'Next.js', percentage: 60, category: 'fullstack' },
+  { name: 'Express.js', percentage: 90, category: 'fullstack' },
+  { name: 'JavaScript', percentage: 95, category: 'fullstack' },
+  { name: 'MongoDB', percentage: 88, category: 'fullstack' },
+  { name: 'PostgreSQL', percentage: 85, category: 'fullstack' },
+  { name: 'Firebase', percentage: 87, category: 'fullstack' },
+  { name: 'Tailwind CSS', percentage: 92, category: 'fullstack' },
+  { name: 'REST APIs', percentage: 90, category: 'fullstack' },
+  { name: 'Git & GitHub', percentage: 90, category: 'fullstack' },
   { name: 'Node.js', percentage: 95, category: 'fullstack' },
   { name: 'TypeScript', percentage: 88, category: 'fullstack' },
-  { name: 'Database Management', percentage: 82, category: 'fullstack' },
-  { name: 'Cloud Services', percentage: 80, category: 'fullstack' },
+  { name: 'Database Management', percentage: 70, category: 'fullstack' },
+  { name: 'Cloud Services', percentage: 70, category: 'fullstack' },
 ];
 
 // Services Data
@@ -53,7 +67,8 @@ export const SERVICES: Service[] = [
     description: 'Custom AI solutions to automate processes, gain insights, and drive innovation in your business.',
     icon: 'brain',
     features: [
-    //  'Natural Language Processing',
+      'Natural Language Processing',
+      'Automations',
     //  'Computer Vision',
     //  'Predictive Analytics',
       'AI Chatbots/Agents',
@@ -82,7 +97,7 @@ export const SERVICES: Service[] = [
     //  'Logo Design',
       'Marketing Materials',
       'Social Media Graphics',
-    //  'Print Design',
+      'Thumbnail design',
     ],
   },
   /*{
@@ -175,11 +190,21 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://ngozi-portfolio.vercel.app/',
     category: 'web',
   },
+  {
+    id: 7,
+    title: 'Web Portfolio Template',
+    description: 'Modern, Software Engineer responsive portfolio templates.',
+    image: '/assets/images/portfolio/Web port.png',
+    stacks: ['React', 'Tailwind CSS', 'Firebase', 'TypeScript'],
+    githubUrl: 'https://github.com/Anafuwecal/Caleb-dev',
+    liveUrl: 'https://calebana.vercel.app/about',
+    category: 'web',
+  },
 ];
 
 // Testimonials Data
 export const TESTIMONIALS: Testimonial[] = [
-  {
+  /*{
     id: 1,
     name: 'Sarah Johnson',
     position: 'CEO',
@@ -196,17 +221,17 @@ export const TESTIMONIALS: Testimonial[] = [
     quote: 'Working with Caleb was a game-changer for our product. His full-stack skills and attention to detail resulted in a flawless application.',
     logo: '/assets/images/logos/innovatelab.png',
     avatar: '/assets/images/avatars/michael.jpg',
-  },
+  },*/
   {
     id: 3,
-    name: 'Divine',
-    position: 'Marketing Director',
-    company: 'BrandWave',
+    name: 'Divine Azubuike',
+    position: 'Founder',
+    company: 'Megafrost Foods',
     quote: 'The brand identity Caleb created for us perfectly captured our vision. Creative, professional, and delivered on time!',
-    logo: '/assets/images/logos/brandwave.png',
-    avatar: '/assets/images/avatars/emily.jpg',
+    logo: '/assets/images/logo/Mega.png',
+    avatar: '/assets/images/logo/Mega.png',
   },
-  {
+ /* {
     id: 4,
     name: 'David Okonkwo',
     position: 'CTO',
@@ -223,7 +248,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote: 'From design to development, Caleb handled everything with excellence. Our platform looks amazing and performs flawlessly.',
     logo: '/assets/images/logos/creativehub.png',
     avatar: '/assets/images/avatars/lisa.jpg',
-  },
+  },*/
 ];
 
 // Contact Info

@@ -26,13 +26,13 @@ const HomePage: React.FC = () => {
         <meta property="og:description" content="AI Engineer, Full-Stack Developer, and Graphic Designer crafting digital experiences." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://calebanafuwe.com" />
-        <meta property="og:image" content="https://calebanafuwe.com/assets/images/logo.svg" />
+        <meta property="og:image" content="/assets/images/logo.svg" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Caleb Anafuwe | AI Engineer & Full-Stack Developer" />
         <meta name="twitter:description" content="AI Engineer, Full-Stack Developer, and Graphic Designer." />
-        <meta name="twitter:image" content="https://calebanafuwe.com/assets/images/og-image.jpg" />
+        <meta name="twitter:image" content="/assets/images/og-image.jpg" />
       </Helmet>
 
       <HeroSection />

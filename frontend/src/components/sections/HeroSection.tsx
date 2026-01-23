@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="text-grayDark font-medium mb-4"
             >
-              👋 Hello, I'm
+              Hello, I'm
             </motion.p>
             
             <motion.h1
@@ -105,9 +105,9 @@ const HeroSection: React.FC = () => {
               <div className="absolute -bottom-4 -right-4 w-48 h-48 md:w-64 md:h-64 bg-grayDark/10 rounded-full blur-2xl" />
               
               {/* Main Image */}
-              <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary shadow-2xl bg-grayLight">
+              <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[40px] overflow-hidden border-4 border-primary shadow-2xl bg-grayLight">
                 <img
-                  src="/assets/images/caleb-hero.jpg"
+                  src="/assets/images/hero/hero-image.jpg"
                   alt="Caleb Anafuwe"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -117,22 +117,6 @@ const HeroSection: React.FC = () => {
                 />
               </div>
               
-              {/* Floating Elements */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute -top-6 right-0 bg-primary text-secondary px-4 py-2 rounded-lg shadow-lg"
-              >
-                <span className="text-sm font-medium">5+ Years Experience</span>
-              </motion.div>
-              
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-                className="absolute -bottom-6 left-0 bg-secondary text-primary px-4 py-2 rounded-lg shadow-lg border border-primary"
-              >
-                <span className="text-sm font-medium">50+ Projects Completed</span>
-              </motion.div>
             </div>
           </motion.div>
         </div>
