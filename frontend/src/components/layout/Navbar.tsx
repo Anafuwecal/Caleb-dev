@@ -23,13 +23,26 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   }, [location]);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-secondary/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-5'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 
+        ${
+          isScrolled || isOpen
+            ? 'bg-secondary/95 backdrop-blur-md shadow-lg py-3'
+            : 'bg-secondary md:bg-transparent py-4 md:py-5'
+        }`}
     >
       <div className="section-container">
         <div className="flex items-center justify-between">
@@ -52,7 +65,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <Button
-              href= "https://docs.google.com/document/d/1YT8_SjVc5wgpLClCscjj46kBliFKLFXi/edit?usp=sharing&ouid=118278892081564553284&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1YT8_SjVc5wgpLClCscjj46kBliFKLFXi/edit?usp=sharing&ouid=118278892081564553284&rtpof=true&sd=true"
               external
               variant="primary"
               size="sm"

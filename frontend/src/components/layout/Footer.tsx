@@ -85,13 +85,13 @@ const Footer: React.FC = () => {
               Be updated with all the latest trends, products, and insights
               in AI, web development, and design.
             </p>
-            <form onSubmit={handleSubscribe} className="flex gap-3">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-4 py-3 rounded-lg bg-grayDark text-secondary 
+                className="w-full sm:flex-1 px-4 py-3 rounded-lg bg-grayDark text-secondary 
                          placeholder-grayMedium focus:outline-none focus:ring-2 
                          focus:ring-secondary"
                 required
@@ -100,6 +100,7 @@ const Footer: React.FC = () => {
                 type="submit"
                 variant="secondary"
                 loading={isLoading}
+                className="w-full sm:w-auto"
               >
                 Subscribe
               </Button>

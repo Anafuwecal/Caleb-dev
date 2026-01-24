@@ -50,10 +50,12 @@ const AboutSection: React.FC = () => {
               <motion.div
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="absolute -bottom-6 -right-6 bg-primary text-secondary p-6 rounded-xl shadow-xl z-20"
+                className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 
+                           bg-primary text-secondary p-4 sm:p-6 rounded-lg sm:rounded-xl 
+                           shadow-xl z-20"
               >
-                <p className="text-3xl font-bold">3+</p>
-                <p className="text-sm">Years of Experience</p>
+                <p className="text-2xl sm:text-3xl font-bold">3+</p>
+                <p className="text-xs sm:text-sm">Years of Experience</p>
               </motion.div>
             </div>
           </motion.div>
