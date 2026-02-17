@@ -172,16 +172,16 @@ export const PROJECTS: Project[] = [
     liveUrl: '',
     category: 'web',
   },
-  /*{
+  {
     id: 5,
-    title: 'AI Image Generator',
-    description: 'Creative AI tool that generates unique images from text descriptions using advanced diffusion models.',
-    image: '/assets/images/projects/image-generator.jpg',
-    stacks: ['Python', 'Stable Diffusion', 'FastAPI', 'React', 'Docker'],
-    githubUrl: 'https://github.com/caleb-anafuwe/ai-image-gen',
-    liveUrl: 'https://ai-image-gen-demo.vercel.app',
-    category: 'ai',
-  },*/
+    title: 'Modern Real Estate Platform',
+    description: 'Landora is a modern, feature-rich real estate management platform. It showcases apartment listings, property details, news updates, and team information with a beautiful, responsive design.',
+    image: '/assets/images/portfolio/LANDORA.png',
+    stacks: ['Typescript', 'Vue', 'Tailwind', 'Node', ''],
+    githubUrl: 'https://github.com/Anafuwecal/Landora',
+    liveUrl: 'https://landora-hazel.vercel.app/',
+    category: 'web',
+  },
   {
     id: 6,
     title: 'Portfolio Template Collection',
