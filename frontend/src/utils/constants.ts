@@ -142,16 +142,16 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://ron-assistant-1.vercel.app/auth',
     category: 'ai',
   },
-/*  {
+  {
     id: 2,
-    title: 'Smart Document Analyzer',
-    description: 'NLP-based document analysis tool that extracts insights, summarizes content, and categorizes documents automatically.',
-    image: '/assets/images/projects/document-analyzer.jpg',
-    stacks: ['Python', 'FastAPI', 'Hugging Face', 'React', 'PostgreSQL'],
-    githubUrl: 'https://github.com/caleb-anafuwe/doc-analyzer',
-    liveUrl: 'https://doc-analyzer-demo.vercel.app',
-    category: 'ai',
-  },*/
+    title: 'Grace Church Website',
+    description: 'A modern, responsive church website, Features a clean design with red, white, and black color scheme, smooth animations, and comprehensive church management features.',
+    image: '/assets/images/portfolio/Grace-Church.png',
+    stacks: ['Node', 'Express', 'Typescript', 'Vue', 'Tailwind'],
+    githubUrl: 'https://github.com/Anafuwecal/GraceChurch',
+    liveUrl: 'https://grace-church-ten.vercel.app',
+    category: 'web',
+  },
   {
     id: 3,
     title: 'Advert Flyer Design',
