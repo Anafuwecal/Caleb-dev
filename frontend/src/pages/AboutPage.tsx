@@ -49,7 +49,6 @@ const AboutPage: React.FC = () => {
   ];
 
   const aiSkills = SKILLS.filter((skill) => skill.category === 'ai');
-  const graphicsSkills = SKILLS.filter((skill) => skill.category === 'graphics');
   const fullstackSkills = SKILLS.filter((skill) => skill.category === 'fullstack');
 
   return (

@@ -11,7 +11,6 @@ const AboutSection: React.FC = () => {
   const isVisible = useScrollAnimation(sectionRef);
 
   const aiSkills = SKILLS.filter((skill) => skill.category === 'ai');
-  const graphicsSkills = SKILLS.filter((skill) => skill.category === 'graphics');
   const fullstackSkills = SKILLS.filter((skill) => skill.category === 'fullstack');
 
   return (
