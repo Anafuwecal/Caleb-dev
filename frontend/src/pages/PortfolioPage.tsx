@@ -15,7 +15,6 @@ const PortfolioPage: React.FC = () => {
     { value: 'all', label: 'All Projects' },
     { value: 'web', label: 'Web Development' },
     { value: 'ai', label: 'AI & ML' },
-    { value: 'design', label: 'Design' },
   ];
 
   const filteredProjects =
@@ -46,8 +45,7 @@ const PortfolioPage: React.FC = () => {
               My Portfolio
             </h1>
             <p className="text-grayMedium text-lg md:text-xl max-w-3xl mx-auto">
-              A collection of my best work in AI engineering, web development,
-              and graphic design.
+              A collection of my best work in AI engineering and web development.
             </p>
           </motion.div>
         </div>

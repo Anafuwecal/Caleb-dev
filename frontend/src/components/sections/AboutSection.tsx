@@ -69,8 +69,8 @@ const AboutSection: React.FC = () => {
             <h2 className="heading-primary mb-6">About Me</h2>
             
             <p className="font-bold text-grayDark text-lg mb-6">
-              I'm Caleb Anafuwe, a passionate AI Engineer, Full-Stack Developer,
-              and Graphic Designer based in Nigeria. With over 3+ years of experience,
+              I'm Caleb Anafuwe, a passionate Full-Stack Developer and AI-Engineer
+              based in Nigeria. With over 3+ years of experience,
               I specialize in creating intelligent solutions and beautiful digital
               experiences that make a difference.
             </p>
@@ -78,8 +78,8 @@ const AboutSection: React.FC = () => {
             <p className="text-grayDark mb-8">
               My journey in tech started with a curiosity about how things work.
               Today, I combine artificial intelligence, modern web technologies,
-              and creative design to build products that solve real-world problems.
-              I believe in clean code, intuitive design, and continuous learning.
+              with creative design to build products that solve real-world problems.
+              I believe in clean code, intuitive workflow, and continuous learning.
             </p>
 
             {/* Skills Section */}
@@ -96,23 +96,6 @@ const AboutSection: React.FC = () => {
                       name={skill.name}
                       percentage={skill.percentage}
                       delay={index * 100}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              {/* Graphics Design Skills */}
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-                  Graphics Design
-                </h3>
-                <div className="space-y-3">
-                  {graphicsSkills.slice(0, 3).map((skill, index) => (
-                    <SkillBar
-                      key={skill.name}
-                      name={skill.name}
-                      percentage={skill.percentage}
-                      delay={index * 100 + 300}
                     />
                   ))}
                 </div>

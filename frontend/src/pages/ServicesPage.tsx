@@ -215,7 +215,7 @@ const ServicesPage: React.FC = () => {
               className="grid grid-cols-2 gap-6"
             >
               <div className="bg-grayDark/50 rounded-xl p-6 text-center">
-                <p className="text-4xl font-bold mb-2">11+</p>
+                <p className="text-4xl font-bold mb-2">19+</p>
                 <p className="text-grayMedium">Projects Completed</p>
               </div>
               <div className="bg-grayDark/50 rounded-xl p-6 text-center">

@@ -96,7 +96,7 @@ const AboutPage: React.FC = () => {
             >
               <h1 className="heading-primary mb-6">About Me</h1>
               <p className="font-bold text-grayDark text-lg mb-6">
-                Hi! I'm Caleb Anafuwe, a passionate technologist and creative
+                Hi! I'm Caleb Anafuwe, a passionate developer and creative
                 professional based in Nigeria. With over 3+ years of experience
                 in the tech industry, I've had the privilege of working on
                 diverse projects ranging from AI-powered applications to
@@ -105,7 +105,7 @@ const AboutPage: React.FC = () => {
               <p className="text-grayDark mb-6">
                 My journey began with a fascination for how technology can solve
                 real-world problems. This curiosity led me to explore artificial
-                intelligence, web development, and graphic design.
+                intelligence and web development.
               </p>
               <p className="text-grayDark mb-8">
                 When I'm not coding or designing, you'll find me exploring new
@@ -156,23 +156,6 @@ const AboutPage: React.FC = () => {
                     name={skill.name}
                     percentage={skill.percentage}
                     delay={index * 100}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Graphics Design */}
-            <div className="card">
-              <div className="flex items-center gap-3 mb-6">
-                <h3 className="text-xl font-bold text-primary">Graphics Design</h3>
-              </div>
-              <div className="space-y-4">
-                {graphicsSkills.map((skill, index) => (
-                  <SkillBar
-                    key={skill.name}
-                    name={skill.name}
-                    percentage={skill.percentage}
-                    delay={index * 100 + 400}
                   />
                 ))}
               </div>

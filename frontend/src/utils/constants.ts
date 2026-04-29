@@ -35,30 +35,22 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 // Skills Data
 export const SKILLS: Skill[] = [
-  { name: 'OpenAI API / LLMs', percentage: 80, category: 'ai' },
+  { name: 'OpenAI Agent SDK / LLMs', percentage: 80, category: 'ai' },
   { name: 'Typescript', percentage: 82, category: 'ai' },
-  { name: 'Langchain', percentage: 52, category: 'ai' },
-  { name: 'Langgraph', percentage: 52, category: 'ai' },
+  { name: 'Langchain/Langgraph', percentage: 52, category: 'ai' },
+  { name: 'VoltAgent', percentage: 62, category: 'ai' },
   { name: 'Python', percentage: 42, category: 'ai' },
   { name: 'Natural Language Processing (NLP)', percentage: 50, category: 'ai' },
-  { name: 'Canva', percentage: 80, category: 'graphics' },
-  { name: 'Adobe Photoshop', percentage: 62, category: 'graphics' },
-  { name: 'CorelDRAW', percentage: 50, category: 'graphics' },
+  { name: 'Python', percentage: 42, category: 'fullstack' },
   { name: 'React.js', percentage: 75, category: 'fullstack' },
   { name: 'Vue.js', percentage: 95, category: 'fullstack' },
-  { name: 'Next.js', percentage: 60, category: 'fullstack' },
-  { name: 'Express.js', percentage: 90, category: 'fullstack' },
   { name: 'JavaScript', percentage: 95, category: 'fullstack' },
   { name: 'MongoDB', percentage: 88, category: 'fullstack' },
   { name: 'PostgreSQL', percentage: 85, category: 'fullstack' },
   { name: 'Firebase', percentage: 87, category: 'fullstack' },
   { name: 'Tailwind CSS', percentage: 92, category: 'fullstack' },
-  { name: 'REST APIs', percentage: 90, category: 'fullstack' },
-  { name: 'Git & GitHub', percentage: 90, category: 'fullstack' },
   { name: 'Node.js', percentage: 95, category: 'fullstack' },
   { name: 'TypeScript', percentage: 88, category: 'fullstack' },
-  { name: 'Database Management', percentage: 70, category: 'fullstack' },
-  { name: 'Cloud Services', percentage: 70, category: 'fullstack' },
 ];
 
 // Services Data
@@ -71,8 +63,7 @@ export const SERVICES: Service[] = [
     features: [
       'Natural Language Processing',
       'Automations',
-    //  'Computer Vision',
-    //  'Predictive Analytics',
+      'AI-Powered Analytics',
       'AI Chatbots/Agents',
     ],
   },
@@ -82,24 +73,11 @@ export const SERVICES: Service[] = [
     description: 'End-to-end web application development using modern technologies and best practices for scalable solutions.',
     icon: 'code',
     features: [
-      'React.js & Next.js',
-      'Node.js & Express',
+      'UI Development',
+      'end to end development',
       'Database Design',
       'API Development',
       'Cloud Deployment',
-    ],
-  },
-  {
-    id: 3,
-    title: 'Graphic Design',
-    description: 'Creative visual solutions that communicate your brand message effectively and leave lasting impressions.',
-    icon: 'palette',
-    features: [
-    //  'Brand Identity',
-    //  'Logo Design',
-      'Marketing Materials',
-      'Social Media Graphics',
-      'Thumbnail design',
     ],
   },
   /*{
@@ -116,14 +94,14 @@ export const SERVICES: Service[] = [
     ],
   },*/
   {
-    id: 6,
+    id: 3,
     title: 'Consulting',
     description: 'Strategic technology consulting to help you make informed decisions and achieve your business goals.',
     icon: 'users',
     features: [
       'Technical Architecture',
       'Code Review',
-      'Team Training',
+      'workflow Optimization',
       'Process Optimization',
       'Tech Stack Selection',
     ],
@@ -154,16 +132,6 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 3,
-    title: 'Advert Flyer Design',
-    description: 'Complete brand identity design for a Fast-food including logo, color palette, typography, and marketing materials.',
-    image: '/assets/images/portfolio/Megafrost.png',
-    stacks: ['Canva', 'Adobe Photoshop'],
-    githubUrl: '',
-    liveUrl: '',
-    category: 'design',
-  },
-  {
-    id: 4,
     title: 'Currency Exchange App',
     description: 'AI-feautured Cross-border currency Exchange platform, That supports up to five Countries  .',
     image: '/assets/images/portfolio/Currency-Fuse.png',
@@ -173,7 +141,7 @@ export const PROJECTS: Project[] = [
     category: 'web',
   },
   {
-    id: 5,
+    id: 4,
     title: 'Modern Real Estate Platform',
     description: 'Landora is a modern, feature-rich real estate management platform. It showcases apartment listings, property details, news updates, and team information with a beautiful, responsive design.',
     image: '/assets/images/portfolio/LANDORA.png',
@@ -183,7 +151,7 @@ export const PROJECTS: Project[] = [
     category: 'web',
   },
   {
-    id: 6,
+    id: 5,
     title: 'Portfolio Template Collection',
     description: 'Collection of modern, responsive portfolio templates for Manager and designers with customization options.',
     image: '/assets/images/portfolio/Ngozi.PNG',
@@ -193,7 +161,7 @@ export const PROJECTS: Project[] = [
     category: 'web',
   },
   {
-    id: 7,
+    id: 6,
     title: 'Web Portfolio Template',
     description: 'Modern, Software Engineer responsive portfolio templates.',
     image: '/assets/images/portfolio/Web port.png',
