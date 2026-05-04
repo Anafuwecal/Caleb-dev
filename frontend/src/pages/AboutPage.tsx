@@ -14,7 +14,7 @@ const AboutPage: React.FC = () => {
 
   const experiences = [
     {
-      year: 'OCTOBER 2024 - CURRENT',
+      year: 'OCTOBER 2024 - MARCH 2026',
       title: 'FULL-STACK DEVELOPER',
       company: 'VYRE.AFRICA',
       description: 'Deployed, maintained and Collaborated with cross-functional teams to ensure code quality through Git version control and code reviews.',
@@ -96,7 +96,7 @@ const AboutPage: React.FC = () => {
               <h1 className="heading-primary mb-6">About Me</h1>
               <p className="font-bold text-grayDark text-lg mb-6">
                 Hi! I'm Caleb Anafuwe, a passionate developer and creative
-                professional based in Nigeria. With over 3+ years of experience
+                professional based in Nigeria. With over 4+ years of experience
                 in the tech industry, I've had the privilege of working on
                 diverse projects ranging from AI-powered applications to
                 stunning brand identities.

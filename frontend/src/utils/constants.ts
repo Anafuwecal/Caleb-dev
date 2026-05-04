@@ -40,7 +40,6 @@ export const SKILLS: Skill[] = [
   { name: 'Langchain/Langgraph', percentage: 52, category: 'ai' },
   { name: 'VoltAgent', percentage: 62, category: 'ai' },
   { name: 'Python', percentage: 42, category: 'ai' },
-  { name: 'Natural Language Processing (NLP)', percentage: 50, category: 'ai' },
   { name: 'Python', percentage: 42, category: 'fullstack' },
   { name: 'React.js', percentage: 75, category: 'fullstack' },
   { name: 'Vue.js', percentage: 95, category: 'fullstack' },

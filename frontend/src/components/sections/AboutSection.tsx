@@ -53,7 +53,7 @@ const AboutSection: React.FC = () => {
                            bg-primary text-secondary p-4 sm:p-6 rounded-lg sm:rounded-xl 
                            shadow-xl z-20"
               >
-                <p className="text-2xl sm:text-3xl font-bold">3+</p>
+                <p className="text-2xl sm:text-3xl font-bold">4+</p>
                 <p className="text-xs sm:text-sm">Years of Experience</p>
               </motion.div>
             </div>
