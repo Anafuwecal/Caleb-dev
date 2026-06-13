@@ -26,6 +26,7 @@ const Footer: React.FC = () => {
       setEmail('');
     } catch (error) {
       toast.error('Failed to subscribe. Please try again.');
+      console.error('error:', error);
     } finally {
       setIsLoading(false);
     }
@@ -39,7 +40,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <Logo variant="light" size="lg" />
             <p className="text-grayMedium">
-              AI Engineer, Full-Stack Developer & Graphic Designer crafting
+              AI Engineer and Full-Stack Developer crafting
               digital experiences that inspire.
             </p>
             <Button
