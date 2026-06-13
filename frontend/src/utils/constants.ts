@@ -164,7 +164,7 @@ export const PROJECTS: Project[] = [
     title: 'Web Portfolio Template',
     description: 'Modern, Software Engineer responsive portfolio templates.',
     image: '/assets/images/portfolio/Web port.png',
-    stacks: ['React', 'Tailwind CSS', 'Firebase', 'Typescript'],
+    stacks: ['React', 'Tailwind CSS', 'Firebase', 'Typescript', 'EmailJS'],
     githubUrl: 'https://github.com/Anafuwecal/Caleb-dev',
     liveUrl: 'https://calebana.vercel.app',
     category: 'web',
