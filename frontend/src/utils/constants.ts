@@ -131,7 +131,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 3,
-    title: 'Currency Exchange App',
+    title: 'Currency Exchange App - in progress',
     description: 'AI-feautured Cross-border currency Exchange platform, That supports up to five Countries  .',
     image: '/assets/images/portfolio/Currency-Fuse.png',
     stacks: ['Vue', 'Typescript', 'Node.js', 'Prisma', 'Supabase', ''],

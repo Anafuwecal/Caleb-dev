@@ -35,6 +35,12 @@ const AboutPage: React.FC = () => {
 
   const education = [
     {
+      year: '2026',
+      degree: 'Certified Backend Developer',
+      institution: 'TechCrush',
+      description: 'Completed intensive training and gained advanced hands-on experience in backend development.',
+    },
+    {
       year: '2025',
       degree: 'B.Sc. Management Information Technology',
       institution: 'ESAE University',
@@ -42,7 +48,7 @@ const AboutPage: React.FC = () => {
     },
     {
       year: '2025',
-      degree: 'Fullstack Development',
+      degree: 'Fullstack Development Certification',
       institution: 'Regonet.Global',
       description: 'Completed advanced courses in Frontend and Backend Development.',
     },
@@ -75,7 +81,7 @@ const AboutPage: React.FC = () => {
             >
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/images/hero/herot.jpg"
+                  src="/assets/images/hero/herot.jpeg"
                   alt="Caleb Anafuwe"
                   className="w-full h-auto"
                   onError={(e) => {
@@ -96,7 +102,7 @@ const AboutPage: React.FC = () => {
               <h1 className="heading-primary mb-6">About Me</h1>
               <p className="font-bold text-grayDark text-lg mb-6">
                 Hi! I'm Caleb Anafuwe, a passionate developer and creative
-                professional based in Nigeria. With over 4+ years of experience
+                professional based in Nigeria. With over 3+ years of experience
                 in the tech industry, I've had the privilege of working on
                 diverse projects ranging from AI-powered applications to
                 stunning brand identities.

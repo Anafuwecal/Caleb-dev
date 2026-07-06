@@ -45,7 +45,7 @@ const PortfolioPage: React.FC = () => {
               My Portfolio
             </h1>
             <p className="text-grayMedium text-lg md:text-xl max-w-3xl mx-auto">
-              A collection of my best work in AI engineering and web development.
+              A collection of my best work in AI and web development.
             </p>
           </motion.div>
         </div>
