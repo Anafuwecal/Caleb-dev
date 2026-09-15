@@ -111,17 +111,17 @@ export const SERVICES: Service[] = [
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'Real-time Chatbot',
-    description: 'A full-stack friendly AI assistant chatbot application',
-    image: '/assets/images/portfolio/ron.PNG',
-    stacks: ['Vue', 'Node.js', 'Javascript', 'Firebase', 'Render'],
-    githubUrl: 'https://github.com/Anafuwecal/-ron-assistant',
-    liveUrl: 'https://ron-assistant-1.vercel.app/auth',
-    category: 'ai',
+    title: 'IVP Africa (Backend)',
+    description: 'Talent Placement Platform deigned to connect skilled professionals with job opportunities in Africa. It features a user-friendly interface, advanced search capabilities, and secure authentication for both employers and job seekers.',
+    image: '/assets/images/portfolio/post2.png',
+    stacks: ['NestJS', 'Prisma', 'Supabase', 'React', 'Nextjs'],
+    githubUrl: 'https://github.com/PN-Africa/IVP-Backend',
+    liveUrl: 'https://ivpafrica.site',
+    category: 'web'
   },
   {
     id: 2,
-    title: 'Grace Church Website',
+    title: 'Church Website',
     description: 'A modern, responsive church website, Features a clean design with red, white, and black color scheme, smooth animations, and comprehensive church management features.',
     image: '/assets/images/portfolio/Grace-Church.png',
     stacks: ['Node', 'Express', 'Typescript', 'Vue', 'Tailwind'],
@@ -151,16 +151,6 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 5,
-    title: 'Portfolio Template Collection',
-    description: 'Collection of modern, responsive portfolio templates for Manager and designers with customization options.',
-    image: '/assets/images/portfolio/Ngozi.PNG',
-    stacks: ['Vue', 'Tailwind CSS', 'Firebase', 'Typescript'],
-    githubUrl: 'https://github.com/Anafuwecal/ngozi-portfolio',
-    liveUrl: 'https://ngozi-portfolio.vercel.app/',
-    category: 'web',
-  },
-  {
-    id: 6,
     title: 'Web Portfolio Template',
     description: 'Modern, Software Engineer responsive portfolio templates.',
     image: '/assets/images/portfolio/Web port.png',
@@ -232,7 +222,7 @@ export const TESTIMONIALS: Testimonial[] = [
 
 // Contact Info
 export const CONTACT_INFO = {
-  email: 'anafuwecalebifeanyi@gmail.com',
+  email: 'devcaleb81@gmail.com',
   phone: '+2348132825644',
   location: 'Nigeria',
   serviceFormUrl: 'https://service-request-form-alpha.vercel.app/',
