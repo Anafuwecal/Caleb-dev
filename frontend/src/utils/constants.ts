@@ -169,6 +169,16 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://vyre-chatbot.vercel.app/',
     category: 'ai',
   },
+  {
+    id: 8,
+    title: 'E-Commerce Marketplace',
+    description: 'A modern e-commerce platform for independent merchants. Shoppers can browse products, search and filter the catalog, inspect product details, manage a cart, and confirm orders. Merchants can register or sign in, create listings with image uploads, inspect their inventory, edit products, and delete listings.',
+    image: '/assets/images/portfolio/Kongoo.png',
+    stacks: ['Vue', 'Tailwind CSS', 'MongoDB', 'Cloudinary', 'Mongoose' ],
+    githubUrl: 'https://github.com/Anafuwecal/Kongoo-shop-frontend',
+    liveUrl: 'https://kongoo-shop.vercel.app/',
+    category: 'web',
+  },
 ];
 
 // Testimonials Data
