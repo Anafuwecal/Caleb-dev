@@ -169,7 +169,7 @@ const AboutPage: React.FC = () => {
             {/* Full-Stack Development */}
             <div className="card">
               <div className="flex items-center gap-3 mb-6">
-                <h3 className="text-xl font-bold text-primary">Full-Stack Dev</h3>
+                <h3 className="text-xl font-bold text-primary">Full-Stack Development</h3>
               </div>
               <div className="space-y-4">
                 {fullstackSkills.map((skill, index) => (
@@ -252,34 +252,6 @@ const AboutPage: React.FC = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-primary text-secondary">
-        <div className="section-container text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Let's Work Together
-            </h2>
-            <p className="text-grayMedium text-lg mb-8 max-w-2xl mx-auto">
-              Ready to bring your ideas to life? I'm available for freelance
-              projects, full-time positions, and collaborations.
-            </p>
-            <Button
-              href={CONTACT_INFO.serviceFormUrl}
-              external
-              variant="secondary"
-              size="lg"
-            >
-              Get Started Now
-            </Button>
-          </motion.div>
         </div>
       </section>
     </>

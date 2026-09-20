@@ -187,31 +187,6 @@ const PortfolioPage: React.FC = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-grayLight">
-        <div className="section-container text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="heading-primary mb-4">Have a Project in Mind?</h2>
-            <p className="text-grayDark text-lg mb-8 max-w-2xl mx-auto">
-              I'm always excited to work on new and challenging projects.
-            </p>
-            <Button
-              href={CONTACT_INFO.serviceFormUrl}
-              external
-              variant="primary"
-              size="lg"
-            >
-              Start a Project
-            </Button>
-          </motion.div>
-        </div>
-      </section>
     </>
   );
 };

@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <Button
-              href="https://docs.google.com/document/d/1YT8_SjVc5wgpLClCscjj46kBliFKLFXi/edit?usp=sharing&ouid=118278892081564553284&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/13DhrW0KPU3M3EGATZGL4HFix7ZvHz8WIcZu987WVjVg/edit?tab=t.0"
               external
               variant="primary"
               size="sm"
